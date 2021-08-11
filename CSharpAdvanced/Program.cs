@@ -19,6 +19,16 @@ namespace CSharpAdvanced
 
             var books = new GenericList<Book>();
             books.Add(new Book());
+
+            //System.Collections.Generic.
+
+            var dictionary = new GenericDictionary<string, Book>();
+            dictionary.Add("1234", new Book());
+
+            //var number = new Nullable<int>(5);
+            var number = new Nullable<int>();
+            Console.WriteLine("Has Value?" + number.HasValue);
+            Console.WriteLine("Value: " + number.GetValueOrDefault());
         }
     }
 }
